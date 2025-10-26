@@ -28,115 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblDiscountPercent = new System.Windows.Forms.Label();
+            this.lblDiscountAmount = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.txtSubtotal = new System.Windows.Forms.TextBox();
+            this.txtDiscountPercent = new System.Windows.Forms.TextBox();
+            this.txtDiscountAmount = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblSubtotal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblSubtotal.AutoSize = true;
+            this.lblSubtotal.Location = new System.Drawing.Point(28, 31);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(46, 13);
+            this.lblSubtotal.TabIndex = 0;
+            this.lblSubtotal.Text = "Subtotal";
             // 
-            // label2
+            // lblDiscountPercent
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblDiscountPercent.AutoSize = true;
+            this.lblDiscountPercent.Location = new System.Drawing.Point(28, 59);
+            this.lblDiscountPercent.Name = "lblDiscountPercent";
+            this.lblDiscountPercent.Size = new System.Drawing.Size(89, 13);
+            this.lblDiscountPercent.TabIndex = 1;
+            this.lblDiscountPercent.Text = "Discount Percent";
             // 
-            // label3
+            // lblDiscountAmount
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.lblDiscountAmount.AutoSize = true;
+            this.lblDiscountAmount.Location = new System.Drawing.Point(28, 89);
+            this.lblDiscountAmount.Name = "lblDiscountAmount";
+            this.lblDiscountAmount.Size = new System.Drawing.Size(88, 13);
+            this.lblDiscountAmount.TabIndex = 2;
+            this.lblDiscountAmount.Text = "Discount Amount";
             // 
-            // label4
+            // lblTotal
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 121);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(28, 121);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(34, 13);
+            this.lblTotal.TabIndex = 3;
+            this.lblTotal.Text = "Total:";
             // 
-            // textBox1
+            // txtSubtotal
             // 
-            this.textBox1.Location = new System.Drawing.Point(180, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtSubtotal.Location = new System.Drawing.Point(180, 28);
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.Size = new System.Drawing.Size(125, 20);
+            this.txtSubtotal.TabIndex = 4;
             // 
-            // textBox2
+            // txtDiscountPercent
             // 
-            this.textBox2.Location = new System.Drawing.Point(180, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtDiscountPercent.Location = new System.Drawing.Point(180, 59);
+            this.txtDiscountPercent.Name = "txtDiscountPercent";
+            this.txtDiscountPercent.Size = new System.Drawing.Size(125, 20);
+            this.txtDiscountPercent.TabIndex = 5;
             // 
-            // textBox3
+            // txtDiscountAmount
             // 
-            this.textBox3.Location = new System.Drawing.Point(180, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtDiscountAmount.Location = new System.Drawing.Point(180, 89);
+            this.txtDiscountAmount.Name = "txtDiscountAmount";
+            this.txtDiscountAmount.Size = new System.Drawing.Size(125, 20);
+            this.txtDiscountAmount.TabIndex = 6;
             // 
-            // textBox4
+            // txtTotal
             // 
-            this.textBox4.Location = new System.Drawing.Point(180, 121);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 20);
-            this.textBox4.TabIndex = 7;
+            this.txtTotal.Location = new System.Drawing.Point(180, 121);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(125, 20);
+            this.txtTotal.TabIndex = 7;
             // 
-            // button1
+            // btnCalculate
             // 
-            this.button1.Location = new System.Drawing.Point(59, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 33);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalculate.Location = new System.Drawing.Point(59, 163);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(105, 33);
+            this.btnCalculate.TabIndex = 8;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnExit
             // 
-            this.button2.Location = new System.Drawing.Point(200, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 33);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(200, 163);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(105, 33);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(338, 240);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtDiscountAmount);
+            this.Controls.Add(this.txtDiscountPercent);
+            this.Controls.Add(this.txtSubtotal);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblDiscountAmount);
+            this.Controls.Add(this.lblDiscountPercent);
+            this.Controls.Add(this.lblSubtotal);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -146,16 +146,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Label lblDiscountPercent;
+        private System.Windows.Forms.Label lblDiscountAmount;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.TextBox txtSubtotal;
+        private System.Windows.Forms.TextBox txtDiscountPercent;
+        private System.Windows.Forms.TextBox txtDiscountAmount;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
