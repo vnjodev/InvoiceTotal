@@ -1,6 +1,6 @@
 ﻿namespace InvoiceTotal
 {
-    partial class Form1
+    partial class frmInvoiceTotal
     {
         /// <summary>
         /// Required designer variable.
@@ -47,25 +47,28 @@
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(46, 13);
             this.lblSubtotal.TabIndex = 0;
-            this.lblSubtotal.Text = "Subtotal";
+            this.lblSubtotal.Text = "&Subtotal";
+            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblDiscountPercent
             // 
             this.lblDiscountPercent.AutoSize = true;
             this.lblDiscountPercent.Location = new System.Drawing.Point(28, 59);
             this.lblDiscountPercent.Name = "lblDiscountPercent";
-            this.lblDiscountPercent.Size = new System.Drawing.Size(89, 13);
+            this.lblDiscountPercent.Size = new System.Drawing.Size(92, 13);
             this.lblDiscountPercent.TabIndex = 1;
-            this.lblDiscountPercent.Text = "Discount Percent";
+            this.lblDiscountPercent.Text = "Discount Percent:";
+            this.lblDiscountPercent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblDiscountAmount
             // 
             this.lblDiscountAmount.AutoSize = true;
             this.lblDiscountAmount.Location = new System.Drawing.Point(28, 89);
             this.lblDiscountAmount.Name = "lblDiscountAmount";
-            this.lblDiscountAmount.Size = new System.Drawing.Size(88, 13);
+            this.lblDiscountAmount.Size = new System.Drawing.Size(91, 13);
             this.lblDiscountAmount.TabIndex = 2;
-            this.lblDiscountAmount.Text = "Discount Amount";
+            this.lblDiscountAmount.Text = "Discount Amount:";
+            this.lblDiscountAmount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTotal
             // 
@@ -75,57 +78,67 @@
             this.lblTotal.Size = new System.Drawing.Size(34, 13);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "Total:";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtSubtotal
             // 
             this.txtSubtotal.Location = new System.Drawing.Point(180, 28);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(125, 20);
-            this.txtSubtotal.TabIndex = 4;
+            this.txtSubtotal.TabIndex = 1;
             // 
             // txtDiscountPercent
             // 
             this.txtDiscountPercent.Location = new System.Drawing.Point(180, 59);
             this.txtDiscountPercent.Name = "txtDiscountPercent";
+            this.txtDiscountPercent.ReadOnly = true;
             this.txtDiscountPercent.Size = new System.Drawing.Size(125, 20);
             this.txtDiscountPercent.TabIndex = 5;
+            this.txtDiscountPercent.TabStop = false;
             // 
             // txtDiscountAmount
             // 
             this.txtDiscountAmount.Location = new System.Drawing.Point(180, 89);
             this.txtDiscountAmount.Name = "txtDiscountAmount";
+            this.txtDiscountAmount.ReadOnly = true;
             this.txtDiscountAmount.Size = new System.Drawing.Size(125, 20);
             this.txtDiscountAmount.TabIndex = 6;
+            this.txtDiscountAmount.TabStop = false;
             // 
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(180, 121);
             this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(125, 20);
             this.txtTotal.TabIndex = 7;
+            this.txtTotal.TabStop = false;
             // 
             // btnCalculate
             // 
             this.btnCalculate.Location = new System.Drawing.Point(59, 163);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(105, 33);
-            this.btnCalculate.TabIndex = 8;
-            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.TabIndex = 2;
+            this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(200, 163);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(105, 33);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmInvoiceTotal
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(338, 240);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
@@ -137,8 +150,10 @@
             this.Controls.Add(this.lblDiscountAmount);
             this.Controls.Add(this.lblDiscountPercent);
             this.Controls.Add(this.lblSubtotal);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmInvoiceTotal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Invoice Total";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
